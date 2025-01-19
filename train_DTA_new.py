@@ -25,7 +25,7 @@ dataloader_test=DataLoader(dataset_test, batch_size=batch_size, collate_fn=datas
 print('data load end')
 # Create an instance of the SDTAnet model
 model = net.SDTNET_NEW(protein_len=1200, compound_len=85,
-                protein_emb_dim=100, compound_emb_dim=64,compound_fea_dim=44,protein_fea_dim=41, out_dim=1,dropout=0.4,model_name='Graph Transformer')
+                protein_emb_dim=100, compound_emb_dim=64,compound_fea_dim=44,protein_fea_dim=41, out_dim=1,dropout=0.4,model_name='final model')
 #model = torch.load( r'/mnt/sdb/home/hjy/Summary-DTA/model/save/Graph_Transforme_model2.pth')
 model.to(device)
 print('Graph Transformer')
